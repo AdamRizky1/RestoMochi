@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 100% 97%;
+    --foreground: 24 46% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 24 46% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 46% 15%;
+    --primary: 24 46% 15%;
+    --primary-foreground: 40 100% 97%;
+    --secondary: 0 80% 72%;
+    --secondary-foreground: 24 46% 15%;
+    --muted: 40 60% 94%;
+    --muted-foreground: 16 23% 52%;
+    --accent: 78 51% 56%;
+    --accent-foreground: 24 46% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 24 46% 15% / 0.15;
+    --input: 24 46% 15% / 0.15;
+    --ring: 24 46% 15%;
+    --radius: 1.5rem;
+  }
+
+  body {
+    @apply bg-[#FFFAF0] text-[#432818];
+    font-family: 'Inter', 'Nunito', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+
+@layer components {
+  .pill-btn {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-300;
+  }
+  .pill-btn:hover {
+    @apply scale-105;
+  }
+  .soft-shadow {
+    box-shadow: 0px 8px 24px rgba(67, 40, 24, 0.08);
+  }
+  .soft-card {
+    @apply rounded-3xl bg-white soft-shadow transition-all duration-300;
+  }
+  .soft-card:hover {
+    box-shadow: 0px 12px 32px rgba(67, 40, 24, 0.12);
+    @apply -translate-y-1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFAF0;
+}
+::-webkit-scrollbar-thumb {
+  background: #F08080;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e06060;
+}
