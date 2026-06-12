@@ -5,7 +5,9 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  // 1. UBAH BAGIAN INI: Ganti './' menjadi '/nama-repo-kamu/'
+  base: '/nama-repo-kamu/', 
+  
   plugins: [inspectAttr(), react()],
   server: {
     port: 3000,
